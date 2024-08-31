@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> LinkedIn </title>
+   
+     <link rel="stylesheet" href="./stylesheet/staticlinkedi.css">
+     <link rel="stylesheet" href="./stylesheet/navbar.css">
+     <link rel="stylesheet" href="./stylesheet/left.css">
+     <link rel="stylesheet" href="./stylesheet/media.css"> 
+     <link rel="stylesheet" href="./stylesheet/middle.css">
+     <link rel="stylesheet"  href="./stylesheet/right.css">
+     <script src="https://kit.fontawesome.com/7748f3a2f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- LinkedIn Navigation Bar starts here -->
+
+    <header >
+        <nav>
+            <!-- Navigation Bar starts here -->
+
+            <div id="navigation-bar">
+                <div id="logo">
+                    <img src="https://github.com/psycoder69/Static-LinkedIn-Page/blob/master/logo/linkedin.png?raw=true" width="30px" height="30px" alt="LinkedIn logo" title="LinkedIn">
+                </div>
+                <div id="search-bar">
+                    <input type="text" name="search_bar" placeholder="Search">
+                </div>
+
+                <!-- Navigation Menu starts here -->
+
+                <div id="navigation-menu">
+                    <div class="nav-icon" id="search-icon" onclick="openSearch()">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+
+                    <!-- Home -->
+
+                    <div class="nav-icon" id="home">
+                        <i class="fa-solid fa-house-user"></i>
+                        
+                        <span> Home </span>
+                    </div>
+
+                    <!-- My Network -->
+
+                    <div class="nav-icon" id="network">
+                        <i class="fa-solid fa-user-group"></i>
+                        <span> My Network </span>
+                    </div>
+
+                    <!-- My Jobs -->
+
+                    <div class="nav-icon" id="jobs">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span> Jobs </span>
+                    </div>
+
+                    <!-- Messaging -->
+
+                    <div class="nav-icon" id="messaging">
+                        <i class="fa-solid fa-message"></i>
+                        <span> Messaging </span>
+                    </div>
+
+                    <!-- Notifications -->
+
+                    <div class="nav-icon" id="notifications">
+                        <i class="fa-solid fa-bell"></i>
+                        <span> Notifications </span>
+                    </div>
+
+                    <!-- About Me -->
+
+                    <div class="nav-icon" id="myself">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <div>
+                            <span> Me </span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                    <div id="divider"></div>
+
+                    <!-- For Business -->
+
+                    <div class="nav-icon" id="business">
+                        <i class="fa-solid fa-grip"></i>
+                        <div>
+                            <span> For Business </span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+
+                    <!-- Premium -->
+
+                    <div id="premium">
+                        <a href="#"> Try Premium for free </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- LinkedIn Body starts here -->
+
+    <div id="content">
+
+        <!-- Left Panel starts here -->
+
+        <div id="left-panel">
+
+            <!-- Profile Info Section -->
+
+            <div class="property">
+                <img src="data:image/jpeg;base64,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" alt="background" id="background">
+                <img src="Profile.JPG" alt="profile pic" id="profile-pic" title="Pranay Dhande">
+                <div id="name"> Nitish Patil</div>
+                <div id="position">Full Stack Developer At Skill Academy </div>
+
+                <!-- Connections -->
+
+                <div class="section" id="connections">
+                    <span>
+                        <span id="connection-1"> Connections 500+</span>
+                        <span id="connection-2"> Connect with alumni </span>
+                    </span>
+                    <i class="fa-solid fa-user-plus fa-beat-fade"></i>
+                </div>
+
+                <!-- Premium -->
+
+                <div class="section" id="promotion">
+                    <span> Access exclusive tools & insights </span>
+                    <a href="#"> Try Premium for free </a>
+                </div>
+
+                <!-- My items -->
+
+                <div class="section" id="my-items">
+                    <i class="fa-solid fa-bookmark"></i>
+                    <span> Saved items </span>
+                </div>
+            </div>
+
+            <!-- My Topics section -->
+
+            <div class="property" id="my-topics">
+                <div id="links">
+                    <div> <a href="#"> Groups </a> </div>
+                    <div>
+                        <a href="#"> Events </a>
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div> <a href="#"> Followed Hashtags </a> </div>
+                </div>
+                <div id="discover"> Discover more </div>
+            </div>
+        </div>
+
+        <!-- Middle Panel starts here -->
+
+        <div id="middle-panel">
+
+            <!-- Make a Post Section -->
+
+            <div class="property" id="post-section">
+                <div id="write-post">
+                    <img src="Profile.JPG" alt="profile-pic" title="Nitish  Patil">
+                    <input type="text" name="_textarea" id="text-area" placeholder="Start a post">
+                </div>
+
+                <!-- Attachments -->
+
+                <div id="attachments">
+                    <div id="photo">
+                        <i class="fa-solid fa-image"></i>
+                        <span> Photo </span>
+                    </div>
+                    <div id="video">
+                        <i class="fa-brands fa-youtube"></i>
+                        <span> Video </span>
+                    </div>
+                    <div id="event">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span> Event </span>
+                    </div>
+                    <div id="article">
+                        <i class="fa-solid fa-newspaper"></i>
+                        <span> Write article </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sorting options -->
+
+            <div id="sort-option">
+                <div id="horizontal-divider"></div>
+                <div id="sort-by"> Sort by: </div>
+                <div id="sort-type"> Top </div>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+
+            <!-- 1st LinkedIn Post starts here -->
+
+            <div class="property" id="post-1">
+
+                <!-- Username, Display Picture, Followers & Days posted ago -->
+
+                <div class="user" style="height: 60px;">
+                    <div >
+                        <img style="padding-bottom: 50px;" src="data:image/png;base64,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" height="130px" width="120px" >
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name"> Myntra Fashion </div>
+                        <div class="user-followers"> 792,456 followers </div>
+                        <div class="posted-ago">
+                            <span> promoted </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+                <!-- Description about the post  -->
+
+                <div class="description">
+                     <span class="hashtag">Myntra Shopping </span> We create MAGIC in your every 'add to cart' experience. Follow @IamMyntra on Instagram, @Myntra on YouTube. <span class="hashtag"> #Mynta*RCB </span>
+                </div>
+
+                <!-- pics used in the post -->
+
+                <div id="post-pics">
+                    <img  width="750" height="422" src="https://exchange4media.gumlet.io/news-photo/112072-myntra.jpg?w=400&dpr=2.6">
+                    
+                </div>
+
+                <!-- Reactions made by the Community -->
+
+                <div id="reactions">
+                    <p>Views</p>
+                    <!-- <img src="svg/like.svg" alt="like" title="like" id="like">
+                    <img src="svg/empathy.svg" alt="empathy" title="empathy" id="empathy">
+                    <img src="svg/praise.svg" alt="praise" title="praise" id="praise"> -->
+                    <div class="reaction-number">
+                        <div class="reaction-number"> 26,474 </div>
+                        <div class="comments-reposts">
+                            <div class="comments"> 376 comments </div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div class="reposts"> 527 reposts </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="divider-2"> <div></div> </div>
+
+                <!-- Like, Comment, Repost, Send Buttons -->
+
+                <div id="reaction-button">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span> Like </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        <span> Comment </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-retweet"></i>
+                        <span> Repost </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span> Send </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2nd LinkedIn Post starts here  -->
+
+            <div class="property" id="post-2">
+
+                <!-- Username, Display Picture, Followers & Days posted ago -->
+
+                <div class="user">
+                    <div>
+                        <img height="70px" width="100px" src="data:image/jpeg;base64,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" alt="SkillAcademy" title="Testbook" id="Testbook">
+                    </div>
+                    <div class="user-info">
+                        <div class="user-name"> Skill Academy Pvt Ltd </div>
+                        <div class="user-followers"> 10,695 followers </div>
+                        <div class="posted-ago">
+                            <span> 3w </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-earth-americas"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                </div>
+
+                
+
+                <!-- Video Used in the post -->
+
+                <div id="post-video">
+                    <img width="750" height="422" src="https://play-lh.googleusercontent.com/bSmhwWEjmXtfkElF2FBCkajAIBmVtHpLpFripT4kI8yKDlH3aljq3iBzW4ozeWBDNmk">
+                       
+                    </video>
+                </div>
+
+                <!-- Reactions made by the community -->
+
+                <div id="reactions">
+                    
+                    <div class="reaction-number">
+                        <div class="reaction-number"> 18,329 </div>
+                        <div class="comments-reposts">
+                            <div class="comments"> 420 comments </div>
+                            <i class="fa-solid fa-circle"></i>
+                            <div class="reposts"> 431 reposts </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="divider-2"> <div></div> </div>
+
+                <!-- Like, Comment, Repost, Send Buttons -->
+
+                <div id="reaction-button">
+                    <div>
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span> Like </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        <span> Comment </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-retweet"></i>
+                        <span> Repost </span>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span> Send </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Panel starts here  -->
+
+        <div id="right-panel">
+
+            <!-- LinkedIn News Section -->
+
+            <div class="property" id="news-section">
+
+                <!-- LinkedIn News -->
+
+                <div id="news-heading">
+                    <span> LinkedIn News </span>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <!-- News 1 -->
+
+                <div id="news">
+                    <div id="news-1">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span> India crosses 3,58,974 daily cases </span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 10h ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 5,047 readers </span>
+                        </div>
+                    </div>
+
+                    <!-- News 2 -->
+
+                    <div id="news-2">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span> Zomato files for $1.18 IPO</span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 13h ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 52,438 readers </span>
+                        </div>
+                    </div>
+
+                    <!-- News 3 -->
+
+                    <div id="news-3">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span> Job pay,in IT soar </span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 2d ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 9,411 readers </span>
+                        </div>
+                    </div>
+
+                    <!-- News 4 -->
+
+                    <div id="news-4">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span> Google saving $1B a year from WFH </span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 2d ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 14,799 readers </span>
+                        </div>
+                    </div>
+
+                    <!-- News 5 -->
+
+                    <div id="news-5">
+                        <div class="news-info">
+                            <i class="fa-solid fa-circle"></i>
+                            <span> Wings of recovery for aviation </span>
+                        </div>
+                        <div class="reader-info">
+                            <span> 3d ago </span>
+                            <i class="fa-solid fa-circle"></i>
+                            <span> 2,456 readers </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- show more button -->
+
+                 <div id="show-more">
+                    <span> Show more </span>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+
+            <!-- Add to Your Feed Section -->
+
+            <div class="property" id="follow-more">
+                <div id="news-heading">
+                    <span> Add to your feed </span>
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+
+                <!-- Apple -->
+
+                <div class="companies">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6RMszPHsbd3fqvI2-yDGrGIlCjGcou-hRGbLyVKFnbQ&s" alt="Apple" title="Apple">
+                    </div>
+                    <div>
+                        <div class="company-name"> Apple </div>
+                        <div class="company-role">
+                            Computers and Electronics Manufacturing
+                        </div>
+                        <div class="company-followers"> 18M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="company-divider"> <div></div> </div>
+
+                <!-- Microsoft -->
+
+                <div class="companies">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3znLZ0zx3GcrT7TpOh6lRDX3hBJjwibNi0X9afakn9g&s" alt="Microsoft" title="Microsoft">
+                    </div>
+                    <div>
+                        <div class="company-name"> Microsoft </div>
+                        <div class="company-role">
+                            Software Development
+                        </div>
+                        <div class="company-followers"> 20M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="company-divider"> <div></div> </div>
+
+                <!-- Meta -->
+
+                <div class="companies">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT1H2yskKTv8YIRcY706kbXaS6Lc0XtfIaCptrl-C-iw&s" alt="Meta" title="Meta">
+                    </div>
+                    <div>
+                        <div class="company-name"> Meta </div>
+                        <div class="company-role">
+                            Software Development
+                        </div>
+                        <div class="company-followers"> 10M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="company-divider"> <div></div> </div>
+
+                <!-- Netflix -->
+
+                <div class="companies">
+                    <div>
+                        <img src="data:image/png;base64,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" alt="Netflix" title="Netflix">
+                    </div>
+                    <div>
+                        <div class="company-name"> Netflix </div>
+                        <div class="company-role">
+                            Entertainment Providers
+                        </div>
+                        <div class="company-followers"> 10M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+
+                <div id="company-divider"> <div></div> </div>
+
+                <!-- Spotify -->
+
+                <div class="companies">
+                    <div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQYAAADACAMAAADRLT0TAAAAilBMVEX///8A2FYA1koA1UQA108A11IA1kgA104A1UL5/vuS6aqb67H7//3E89H2/vnd+OWl7bl65Zm68cnp+++18MWg7LVb4YMm22SD55/L9NZM33mW6q2K6KTr+/C+8szi+elm4opO33qt7r/X9+By5JN+5psz3GpB3XIX2l5g4YZu45DI9NSq7r3Y9+CpYhPkAAALIklEQVR4nO1daXeqOhQtCUkQBWcFRcWhgNb+/7/3ANtrtYGE4ST0Lfen3rXam2STnJw5b28vvPDCCy+88MILfwYD3RPQB3e4HQWnRbw0TEQpMo3lanGyr86wp3tmqjA8eHtiUcSYSQgxvpD+aDJGKTb23myoe46wGPj2CmNk/ls8D8REGK9sX/dkgbCbrzBlpQz84IJRvB/tdM+5bQztJZal4E4FXtr/IybceXUO7kyMXN3zbwX+uSYH/5g4/305cVjSBhx8MUGXB93raILB2kSNSciJQGZf92JqY41YGxzcwNBa93pqYcRaJCEngo10r6kyHAO1S0IGlDi611UJ0xVuRSY8g+D9VPfa5GFbICTkRFi27tVJ4nMJcB7uQMs/YXkBboUb/sKG2ESgW+EGFG10r7McExjR+AxCt7pXWoaxpYKEDNa77rUWohcrOBDfQHFH/XU7w1THgpEO1klfhA99QzyD4A4a4DNlYuEOa6Z71c+Ya2Ah5WGue92PsLWwkPLQKevbxnpYMAzcIY1SHwtd4kGPXPhGV+TDQSsLXbkvfM0spDx0QH/YaZQL38Da9UmXKNYdeSBEd2Qr6gALKQ+xXhZOLTvh6wKddLIw64BguAFP9LEw7QwLKQ/6PPfLTgiGG8hSFwueQmeTGCjQw8JRu970COuohYakQ0ciA0l0sBB05K68g2k4FruOHYkMlnqlOu7YkcigXpmcUd1r5kG5EtXBvWBkNpZaFtbV5GOeEI0opTgH/f4p+wHdsqfb4QEpzRTrSR6JdPUoXbARh2N7NHP8z9104w5ulQODnruZDo8f28M8OC0iYmGKWHk6tQSoyrIE8WVJzHT9ZDWeb4+yQfjNcTIf742MjfpkqLw03VKTKmcgfj8c6/lCBsOJfU7JqLkzqDoPTMlmMJGVnA6fjYdw/XloWDX2hbrtMCiQDIRRcpq1mIiy2QYRphV3BW1v/HLM+ZsBGWuA5CzX8ZZWlZRjpipuYXAnheGG3xwW6aaQpIEYYPN4wJZ7JihwsMC5IEkmFOVFrXibgSpQY50Qy5wOsoefytvblGdakpWKod8Gs9gS66+WCrekzZsH/VAwco5dwERbgqkIcnMFJFYw8D/MBBU7KoSkz9MgVbuF/X1pvhmF90p6PHFNIvBxnzBclBBheuDj8wdXbOdnKCUCevAj36rCOnK5j3FRhjb4qeDeEzIarLs7OrPr3PbeT5ccp7EXrOeHycfntLZRuDUKpgN9VxQF8gtPxc4ZBWFs5K4mxFKYd6T/QjeflBGHwahO2wKPuzuhZZVb5JY3z79+d7q1z0m6eMYkXGyEMJbRsfeu1fwUIy4PFqzXYVIYtkThj18b+Ou9iZHM+p/pMFM2jHPfl17HiXd1IVi74r3YumHf1YHHdWxJdyjgc0EYtZZjOdcF1/sBfGWWhfIJJWEQhGajyvQf/52JcPK+FYuLMefTwAqHQtHwPTprh4I7FRSvRgJLacs7qBZk0YmvIVZFmBX1y5gY8iYF6v4ocL9BI2UivhZ+3iHvrgB1xV2UlhH9BEH4UqAacreoCZkapzUL0sT8bhZcxRZURmoOYxNkrn8H5/geYkA/fQcSABkNnoTEiK/RASYI1r4oSB7TzcPYeQQ7MyXyeDZClaPZjD7YTVwBaYBeFYfKGYDZ8jE249DrHxx/OHXve7rnTof+9rD2zpGJK4UsGbnLCL9oSgiuyqLAyi5iICUgOvW3EnZjL7VDxzGS7hJGo5vNMAwL9TkGV4zGU1v5FKT2UVS9xd3UWZ+JqGfcbQCKVuHCKAngmGMQCjIspL6VSa147ddOt5hO3pcWEhNOymUK+W35twWJ7DdCjXenccaJOzkZDS00wKw4cV6smbQWtxn2I6sBE4A5s8Kdarb7CTajuD4TZqtT+QmR9gQQLtrMl7ieIQOmRg5ENMCE1D/HtE5nObB4Yk9EA4IauU6fQQyVGlieAAebWOAvrIpnA0P5n4Q0hEAD59hdqhEBRoPoUEAnsG9OVYgAo0EsIsv/vrcZHn1nO0mx3X4cP3eVYyrTs3wDGbiUCxEN7Mr9s6/4HcJftnWOW/o4We5P9sGX9w0MY1lhCed3ERqY7On7bpx+mFg4j98VZAR8ZZcvw7UjR0ZR+PYZcOqTUJkmyT3QNLxessxnSadKFqjC5mLtS5zoQMYJBqhMi00rQvvZhnAnF4JZde0vC9pFgdAsmUjUeQHKaxlDm1nJSspQLqNify0/IBJVf2QBRgM3ePx7As1LZQjDUb+sjE5MA6DbpZITriGymF1x33WxHwww4aW6S7YRUibOBXLiKvwgCK5R+YfycA2hyYhnIs2EHwTQQa8jXJNKTO93ukdfuBsg+znoCd4x6/RMhPjqhiyy0dW3wrTGD9KyKFR1B2goV19g33zo/Sb+HOYFkIZGaR6p+XDLhPxCniMpr2Mw8h2O68XirwGa5lEnlvttPJFocfHs/vWQWtlOam7PDnPbu+wjZFHJACaOswjItC/jrAZN+hGlgD0TkK0/WXgj57Mkt6+386/ewrDEZBBqpQaY1I4ETQGTlpF5lmcSrrfyjSVcf5SapDIBTJnxYQs8pIK56UdLLqNjne+xmYyTNvIqTdhu3MXJwnfg0GmUsTwd7aUq7MqAYAsBN2Lh0IZwcmeLZkwAp46LhQNuKZbrXqOaUTtDQe2XyOHRZshmOK6bgQ5eVlJQZHSfQKv27WBk1HodDIOX3glmRdt+a2hS55k0+Ao4wZUJkIC2rUwE8HWZQaBPF5s006MzS9XnU3he7Pf7xTk8eevRxB9KyPRZxUeyVDxVIPgyv9wdrj+zw9i0biVnmTH1BTNvgoQtFIX2RJA0N5du35ADbPF3CO4Kktw/7+fBW5niPka3FNrYm5QYHu5J3pxRUqou6olHyDUlYjcbRykBFSwEknXHed8WJmcU5sP+gpLGBWIHGMOoGgM/qMhCNQWbglskz/tP1PSSmMB6JAmzVjPunpDLTlXV1AS+LR5B+MRRgGTsOnUtbiS8481h4uiXkXiU2oZMVXc8YdZLKyDUeHoGVC5apK45nqI2sgSZD47VQEZ3UNgbT5QS1x6QcVfOXSnRgBU+TuApC20TGn0LS6nutQy+n8kd6rZD9vzlJfPrbhMpdZoqfQlPZaaDYaYGhWTatBI9+ge0RfHKobrVTjcbLFPljxp147WWR2h4u2XYxebrGt5UVndpykLpZfkP/BJxfVBmUz1C//Nmj9D0TMfbe6eOhZ4jkaFL75Xoe8KnU091aHzQ6e2gv6/FFzBcUqwELh0RDwwy8U0C3VAm1XcvfYLbTq5SQxa0PwTZCaVahxL9DEc7D1bbyQS1cNX9ZLDWS+KOtdZrE3fmYfVAow+Ganr4kAdPGw9UmyXBg1SFKABwh/ZChrUWOWkpfc1LBjrui67cET/hyPcUaAekrYTcdrFTq1cT0gHdkQc3Umhvski7HVGIk7ILA2t9Rl2EWdFTCe2CYOXhqWqYLhXUcaOlRo+bJDzoG4NYHdOZ+DgmoJKSJZriEZURwG2IP7IVbtgVvirTkAQaq38quwkmFXP/pYAM1Q9EN0cftSwimNpnkdvCIKAtEsGorfJR5DbRs1HTutIbCEK20hS3tjFKapXOPZJAk5F4pI7DWTRpEJzVFSw6aVBXxqZft/ycMJz0dbwjB4TPoHr77IyDoKM+hfoY9mPpVvt5E/u4/7/j4AbXCWJh046sA4YVB86fvhnEOF7HMcurEs0fTfRudZmIYhaPr3/FdmqMzXEy98J9lGoEWTfVVLuI9qE3n1R79u+FF1544YUXXnjhBU34D2dEv18T4i76AAAAAElFTkSuQmCC" alt="Spotify" title="Spotify">
+                    </div>
+                    <div>
+                        <div class="company-name"> Spotify </div>
+                        <div class="company-role">
+                            Musicians Stockholm, Stockholm County
+                        </div>
+                        <div class="company-followers"> 3M followers </div>
+                    </div>
+                </div>
+
+                <!-- Follow Button -->
+
+                <div class="follow-button-container">
+                    <button class="follow-button">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <span> Follow </span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
